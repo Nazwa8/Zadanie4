@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F5F5DC">
+
+    <!-- Tytuł -->
+    <TextView
+        android:id="@+id/tytul"
+        android:layout_width="389dp"
+        android:layout_height="63dp"
+        android:background="#A52A2A"
+        android:gravity="center"
+        android:text="Gra w kości. Autor: Imie Nazwisko"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/przycisk1"
+        android:layout_width="394dp"
+        android:layout_height="53dp"
+        android:text="RZUĆ KOŚCIAMI"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <Button
+        android:id="@+id/przycisk2"
+        android:layout_width="394dp"
+        android:layout_height="53dp"
+        android:text="RESETUJ WYNIK"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/blok1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="\?"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/blok2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="\?"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/blok3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="\?"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/blok4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="\?"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/blok5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="\?"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="204dp"
+        android:layout_height="132dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414">
+
+        <TextView
+            android:id="@+id/tekst1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Wynik tego losowania: 0" />
+
+        <TextView
+            android:id="@+id/tekst2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Wynik gry: 0" />
+
+        <TextView
+            android:id="@+id/tekst3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Liczba rzutów: 0" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
