@@ -8,7 +8,6 @@
     tools:context=".MainActivity"
     android:background="#F5F5DC">
 
-    <!-- Tytuł -->
     <TextView
         android:id="@+id/tytul"
         android:layout_width="389dp"
