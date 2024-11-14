@@ -50,13 +50,13 @@ public class MainActivity extends AppCompatActivity {
         tekst2 = findViewById(R.id.tekst2); //wyniki wszystkich gier
         tekst3 = findViewById(R.id.tekst3); //ile było gier
 
-        rzut.setOnClickListener(new View.OnClickListener() {
+       rzut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            roll();
-            wynik(liczby);
-            ileLos();
-            wyswietl(tab);
+                roll();//losowanie
+                wynik(liczby); //wynik wszystkich losowan (wynik gry)
+                ileLos();//liczba gier
+                wyswietl(tab); //wyświetlenie kostek
             }
         });
 
